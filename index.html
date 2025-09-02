@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T.J. Bostic — Portfolio</title>
+  <meta name="description" content="Modern, sleek, fully‑responsive portfolio template." />
+  <link rel="stylesheet" href="Porfolio.css" type="text/css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>T.J. Bostic</span>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" download>Résumé</a>
+      </nav>
+      <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <nav id="mobileNav" hidden class="container" aria-label="Mobile">
+      <div style="display:flex; gap:1rem; padding:.5rem 0 1rem; border-top:1px solid color-mix(in oklab, var(--card), transparent 25%);">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" download>Résumé</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="container hero reveal">
+    <h1 class="title"><strong>Full-Stack Developer Seeking Challenging Projects</strong></h1>
+    <p class="subtitle">Self-motivated, detail-ordiented, and driven full-stack developer.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn ghost" href="#contact">Contact me</a>
+      <a class="btn" href="resume.pdf" download>Download résumé</a>
+    </div>
+  </section>
+  <section id="about" class="section">
+    <div class="container grid grid-2">
+      <article class="card glow reveal">
+        <h2>About</h2>
+        <p class="muted">I began devleopment in search of solutions to organizational problems in my workplace. I started self-study through online bootcamps, and am now in the process of finishing a computer science degree.</p>
+        <p>Modern problems require modern solutions. I am dedicated to building the most user-friendly and efficient applications possible.</p>
+      </article>
+      <aside class="card reveal">
+        <h3>Highlights</h3>
+        <ul class="muted">
+          <li>✔ 5+ years building web apps</li>
+          <li>✔ 30+ shipped projects</li>
+          <li>✔ Performance & accessibility minded</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="lead">Always devloping. Take a look at my work</p>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <h3>Church Website Redesign</h3>
+          <p class="muted">A now responsive, accessible, and interactive website for a local church.</p>
+          <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JS</span>
+          </div>
+        </article>
+        <article class="card reveal">
+          <h3>Mobile App Development</h3>
+          <p class="muted">Solving the female's unique difficulty of consistent weight tracking throughout her cycle, I developed the mobile app that provides women with an analytic approach to tracking weight.</p>
+          <div class="chips">
+            <span class="chip">React</span>
+            <span class="chip">Node</span>
+          </div>
+        </article>
+        <article class="card reveal">
+          <h3>Coming Soon</h3>
+          <p class="muted">Short description of what it is and the problem it solves.</p>
+          <div class="chips">
+            <span class="chip">Next.js</span>
+            <span class="chip">Tailwind</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <p class="lead">Technologies I use to bring ideas to life.</p>
+      <div class="grid grid-3">
+        <div class="card reveal"><strong>Frontend</strong><p class="muted">HTML5, CSS3, JS/TS, React</p></div>
+        <div class="card reveal"><strong>Backend</strong><p class="muted">Node.js, APIs, SQL/NoSQL</p></div>
+        <div class="card reveal"><strong>Tooling</strong><p class="muted">Git/GitHub, CI/CD, Docker</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="container grid grid-2">
+      <article class="card reveal">
+        <h2>Contact</h2>
+        <p class="muted">Email: tjbostic@yahoo.com · Based in Winsto-Salem, NC, USA</p>
+        <p>Open to freelance & full‑time opportunities. Let’s build something great.</p>
+        <div class="cta"><a class="btn primary" href="mailto:you@example.com">Say hello</a></div>
+      </article>
+      <form class="card reveal" aria-labelledby="contactFormHeading" onsubmit="event.preventDefault()">
+        <h3 id="contactFormHeading">Quick message</h3>
+        <label class="muted" for="name">Name</label>
+        <input id="name" name="name" required />
+        <label class="muted" for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label class="muted" for="msg">Message</label>
+        <textarea id="msg" name="message" rows="4" required></textarea>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="container">© <span id="year"></span> T.J. Bostic. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn?.addEventListener('click', () => {
+      const open = !mobileNav.hasAttribute('hidden');
+      mobileNav.toggleAttribute('hidden');
+      menuBtn.setAttribute('aria-expanded', String(!open));
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) {
+          e.target.classList.add('show');
+          io.unobserve(e.target);
+        }
+      }
+    }, { threshold: .18 });
+    for (const el of document.querySelectorAll('.reveal')) io.observe(el);
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
